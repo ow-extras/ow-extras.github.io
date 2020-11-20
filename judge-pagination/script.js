@@ -14,8 +14,7 @@ FrontendApiManager.onReady("EvaluationForm", function(api) {
 `);
 
 
-    var $subFormLabel = $('.fields:first');
-    $subFormLabel.before('<h3>Submission Form</h3><hr>');
+    $('.fields:first').before('<h3>Submission Form</h3><hr>');
 
 
     var $breadcrumbs = $('.formBuilderFormBreadCrumb a');
