@@ -10,6 +10,8 @@
 .tab-set-header .name {
     line-height: 1.5 !important;
     text-align: center;
+    color: #000;
+    background-color: #eee;
 }
 
 .button-row {
