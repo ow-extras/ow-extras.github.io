@@ -1,4 +1,4 @@
-FrontendApiManager.onReady("submissionForm", function(api) {
+FrontendApiManager.onReady("EvaluationForm", function(api) {
     // create button row
     var $galleryDetails = $('.gallery_details');
     $galleryDetails.after('<div class="button-row"><div class="button-row-left"></div><div class="button-row-right"></div></div>');
