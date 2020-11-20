@@ -74,7 +74,7 @@ $(function() {
             }
 
             if (!$('.submit.save').length) {
-                $saveDraft.hide();
+                $('.save-draft').hide();
             }
 
             $prevBtn.removeAttr('style').prop('disabled', true);
