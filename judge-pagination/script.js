@@ -100,7 +100,6 @@ $(function() {
                 leftPanel.scrollTop = 0;
                 rightPanel.scrollTop = 0;
                 pageNum = Number($(this).attr('data-pageindex')) + 1;
-                checkPage();
                 $breadcrumbs.filter('.selected').parent().next().find('a').click()
             });
 
