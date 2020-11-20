@@ -25,9 +25,6 @@ $(function() {
             var $prevBtn = $('.button-row .button-row-left .prev');
             var $cancel = $('.submitButtons .btn');
             var $saveAndBack = $('.submitButtons .backToList');
-            if (!$('.goToNext').length) {
-                $('.save-and-next').hide();
-            }
             var $saveAndNext = $('.submitButtons .goToNext');
             var $saveDraft = $('.submitButtons .submit.save');
             var leftPanel = document.querySelector('.judgingGallery_leftContent');
@@ -72,7 +69,13 @@ $(function() {
                 }, 250);
             });
 
-            if ($saveAndNext.length === 0) $('#save-and-next').hide();
+            if (!$('.goToNext').length) {
+                $('.save-and-next').hide();
+            }
+
+            if (!$('.submit.save').length) {
+                $saveDraft.hide();
+            }
 
             $prevBtn.removeAttr('style').prop('disabled', true);
 
