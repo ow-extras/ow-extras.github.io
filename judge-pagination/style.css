@@ -143,13 +143,12 @@ div.judgingGallery_info.wbox>div>span {
     position: absolute;
     margin: -70px -5px 0;
     top: unset;
-    background: transparent;
     border: 0;
     text-align: center;
 }
 
 .formBuilderFormBreadCrumb.ui-helper-clearfix>ul>li>a {
-    font-size: 15px!important;
+    font-size: 14px!important;
 }
 
 input:hover:disabled {
