@@ -6,7 +6,7 @@ $(function() {
             $galleryDetails.after('<div class="button-row"><div class="button-row-left"></div><div class="button-row-right"></div></div>');
             $('#evaluation>.wbox:first-child').prependTo($galleryDetails);
             $('.categoryName').after('<br>');
-            $('#content>div.gallery_details>div.judgingGallery_info.wbox').append('<br><br>');
+            $('#content>div.gallery_details>div.judgingGallery_info.wbox').append('<br>');
             $('.judgingGallery_leftContent .btn-submit').appendTo($('.button-row-left'));
             $('.button-row-right').append(`
     <a class="btn cancel-and-back">Cancel & Go Back</a>
