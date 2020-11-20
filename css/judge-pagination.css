@@ -1,0 +1,109 @@
+.tab-set {
+    display: none !important;
+}
+
+​ .tab-set.show-tab {
+    display: block !important;
+}
+
+​ .tab-set-header .name {
+    background: #934b9d;
+    color: #fff;
+    font-size: 1rem !important;
+    padding: 12px 8px;
+    margin: 0 !important;
+}
+
+​ .button-row {
+    clear: both;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    position: relative;
+}
+
+​ .button-row input,
+.button-row button,
+.button-row a {
+    font-size: 12px !important;
+}
+
+​ .button-row-left .btn-submit {
+    float: none;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+​ .button-row-left .btn-submit input[type="button"] {
+    margin: 10px 0 10px 5px;
+}
+
+​ .button-row-left .btn-submit input[type="button"]:first-child {
+    margin-left: 0;
+}
+
+​ .button-row-right {
+    display: flex;
+    align-items: center;
+}
+
+​ .button-row-right button,
+.button-row-right a.btn {
+    margin: 10px 5px 10px 0;
+}
+
+​ .button-row-right button:last-child {
+    margin-right: 0;
+}
+
+​ .gallery_details>.wbox {
+    margin-bottom: 10px;
+}
+
+​ .gallery_details>.wbox label {
+    font-weight: 700;
+}
+
+​ .gallery_details>.wbox {
+    margin-bottom: 10px;
+}
+
+​ .judgingGallery_leftContent,
+.judgingGallery_rightContent {
+    height: var(--judgeEvalHeight, 640px);
+}
+
+​ .judgingGallery_rightContent .judgingGallery_info.wbox {
+    height: 100%;
+    margin: 0;
+}
+
+​ #evaluation {
+    overflow-y: scroll;
+}
+
+​ #evaluation h3 {
+    display: none;
+}
+
+​ #evaluation textarea {
+    height: 100px;
+}
+
+​ #evaluation .submitButtons {
+    display: none;
+}
+
+​ .formBuilderFormBreadCrumb li {
+    display: inline-flex !important;
+    align-items: center;
+}
+
+​ .formBuilderFormBreadCrumb img {
+    display: block;
+}
+
+​ .formBuilder.form .formBuilderFormBreadCrumb ul li a.selected {
+    text-decoration: underline;
+}

@@ -1,0 +1,32 @@
+    /*
+        GRID LAYOUT
+    */
+    
+    .grid-wrap {
+        position: relative;
+        margin: var(--grid-spacing, 10px) auto;
+        display: grid;
+        grid-gap: var(--grid-spacing, 10px);
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .grid-col {
+        border: 1px solid #eee;
+        padding: 40px 20px;
+    }
+    
+    .grid-col img {
+        display: block;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .grid-wrap {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    
+    @media screen and (max-width: 550px) {
+        .grid-wrap {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }

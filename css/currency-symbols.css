@@ -1,0 +1,37 @@
+/* Currency Symbol CSS */
+
+.dollar-sign .view,
+.euro-sign .view,
+.yen-sign .view {
+    position: relative;
+}
+
+.dollar-sign .view input[type="text"],
+.euro-sign .view input[type="text"],
+.yen-sign .view input[type="text"] {
+    padding-left: 12px;
+}
+
+.dollar-sign .view::before {
+    content: "$";
+    position: absolute;
+    left: 5px;
+    bottom: 8px;
+    font-size: 15px;
+}
+
+.euro-sign .view::before {
+    content: "€";
+    position: absolute;
+    left: 5px;
+    bottom: 8px;
+    font-size: 15px;
+}
+
+.yen-sign .view::before {
+    content: "¥";
+    position: absolute;
+    left: 5px;
+    bottom: 8px;
+    font-size: 15px;
+}

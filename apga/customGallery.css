@@ -1,0 +1,81 @@
+ul.scheduleDayList,
+.breadcrumb {
+    display: none;
+}
+
+#tabs {
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#tabs li {
+    float: left;
+    margin: 0 .5em 0 0;
+}
+
+#tabs a {
+    position: relative;
+    background: #004685;
+    background-image: #004685;
+    padding: .7em .5em;
+    float: left;
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .8);
+    border-radius: 5px 5px 0 0;
+    border: 1px #004685 solid;
+    border-bottom: 0;
+}
+
+#tabs a:hover,
+#tabs a:hover::after,
+#tabs a:focus,
+#tabs a:focus::after {
+    background: #fff;
+    color: #004685;
+}
+
+#tabs a:focus {
+    /* outline: 0;*/
+}
+
+#tabs a::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    right: -.5em;
+    bottom: 0;
+    width: 1em;
+    background: #001f3b;
+    border-radius: 0 5px 0 0;
+}
+
+#tabs #current a,
+#tabs #current a::after {
+    background: #fff;
+    color: #004685;
+    z-index: 3;
+}
+
+#containerContent {
+    background: #fff;
+    padding: 2em;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    border-radius: 0 5px 5px 5px;
+    box-shadow: 0 -2px 3px -2px #001f3b;
+}
+
+#content>div.main_content>div.paging.clearfix,
+#content>div.sidebar_right>div:nth-child(1),
+#improved>li.application_category_filter,
+#improved>li.filterByScheduleRoom,
+#improved>li.filterByScheduleDay,
+#improved>li.filterByScheduleTimeSlot,
+#content>div.sidebar_right>div.info-block.box-green.front {
+    display: none!important;
+}

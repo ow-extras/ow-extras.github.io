@@ -1,0 +1,33 @@
+/* read only styling */
+
+input[type="text"]:read-only {
+    background-color: #eee !important;
+}
+
+.hidden-but-loaded {
+    display: none!important;
+}
+
+input[type="text"]:-moz-read-only {
+    background-color: #eee !important;
+}
+
+
+/* dollar sign fields */
+
+.dollar-sign .view {
+    position: relative;
+}
+
+.dollar-sign .view input[type="text"] {
+    padding-left: 12px;
+}
+
+.dollar-sign .view::before {
+    content: "$";
+    position: absolute;
+    left: 2.5px;
+    bottom: 5.5px;
+    font-size: 15px;
+    font-weight: bold;
+}
