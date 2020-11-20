@@ -1,0 +1,161 @@
+@import url("https://openwater-themes.s3.amazonaws.com/css/split-scroll-judge-gallery.css");
+.tab-set {
+    display: none !important;
+}
+
+.tab-set.show-tab {
+    display: block !important;
+}
+
+.tab-set-header .name {
+    text-align: center;
+    line-height: 1.5 !important;
+    color: #fff;
+    background-color: #2a3e7f;
+}
+
+.button-row {
+    clear: both;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    position: relative;
+}
+
+.button-row input,
+.button-row button,
+.button-row a {
+    font-size: 12px !important;
+}
+
+.button-row-left .btn-submit {
+    float: none;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.button-row-left .btn-submit input[type=button] {
+    margin: 10px 0 10px 5px;
+}
+
+.button-row-left .btn-submit input[type=button]:first-child {
+    margin-left: 0;
+}
+
+.button-row-right {
+    display: flex;
+    align-items: center;
+}
+
+.button-row-right button,
+.button-row-right a.btn {
+    margin: 10px 5px 10px 0;
+}
+
+.button-row-right button:last-child {
+    margin-right: 0;
+}
+
+.gallery_details>.wbox {
+    margin-bottom: 10px;
+}
+
+.gallery_details>.wbox label {
+    font-weight: 700;
+}
+
+.gallery_details>.wbox {
+    margin-bottom: 10px;
+}
+
+.judgingGallery_leftContent,
+.judgingGallery_rightContent {
+    height: var(--judgeEvalHeight, 640px);
+}
+
+.judgingGallery_rightContent .judgingGallery_info.wbox {
+    height: 100%;
+    margin: 0;
+}
+
+#evaluation {
+    overflow-y: scroll;
+}
+
+
+/* #evaluation h3 {
+    display: none;
+} */
+
+#evaluation textarea {
+    height: 100px;
+}
+
+#evaluation .submitButtons {
+    display: none;
+}
+
+.formBuilderFormBreadCrumb li {
+    display: inline-flex !important;
+    align-items: center;
+}
+
+.formBuilderFormBreadCrumb img {
+    display: block;
+}
+
+.formBuilder.form .formBuilderFormBreadCrumb ul li a.selected {
+    text-decoration: underline;
+}
+
+
+/* Fix for overflowing tables in judge eval view */
+
+.view table td {
+    width: auto !important;
+}
+
+.view table {
+    width: 100% !important;
+    max-width: 100% !important;
+    table-layout: fixed;
+}
+
+
+/* Center align entry info  */
+
+#content>div.gallery_details>div.judgingGallery_info.wbox {
+    text-align: center;
+}
+
+
+/* fix entry info links */
+
+div.judgingGallery_info.wbox>div>span {
+    padding: unset!important;
+}
+
+
+/* move breadcrumbs */
+
+.judgingGallery_leftContent #scoringForm .formBuilderFormBreadCrumb {
+    position: absolute;
+    margin: -70px -5px 0;
+    top: unset;
+    background: transparent;
+    border: 0;
+    text-align: center;
+}
+
+.formBuilderFormBreadCrumb.ui-helper-clearfix>ul>li>a {
+    font-size: 15px!important;
+}
+
+input:hover:disabled {
+    background-color: #fff;
+}
+
+#evaluation .judgingGallery_info.wbox label {
+    font-size: 15px;
+}
