@@ -139,6 +139,7 @@ div.judgingGallery_info.wbox>div>span {
     margin: -50px -5px 0;
     top: unset;
     border: 0;
+    font-weight: 600;
 }
 
 .formBuilderFormBreadCrumb.ui-helper-clearfix>ul>li>a {
