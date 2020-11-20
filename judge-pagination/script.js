@@ -19,7 +19,7 @@ $(function() {
 
             var $breadcrumbs = $('.formBuilderFormBreadCrumb a');
             var selectedIndex = $breadcrumbs.filter('.selected').index();
-            var $tabSets = $('#evaluation .tab-set]');
+            var $tabSets = $('#evaluation .tab-set');
             var $nextBtn = $('.button-row .button-row-left .next');
             var $prevBtn = $('.button-row .button-row-left .prev');
             var $cancel = $('.submitButtons .btn');
