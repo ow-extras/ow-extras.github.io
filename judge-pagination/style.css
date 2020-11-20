@@ -142,8 +142,10 @@ div.judgingGallery_info.wbox>div>span {
 .judgingGallery_leftContent #scoringForm .formBuilderFormBreadCrumb {
     position: absolute;
     margin: -50px -5px 0;
+    text-align: center;
     top: unset;
     border: 0;
+    min-width: 93.5%;
 }
 
 .formBuilderFormBreadCrumb.ui-helper-clearfix>ul>li>a {
