@@ -8,10 +8,7 @@
 }
 
 .tab-set-header .name {
-    text-align: center;
     line-height: 1.5 !important;
-    color: #fff;
-    background-color: #2a3e7f;
 }
 
 .button-row {
@@ -139,7 +136,7 @@ div.judgingGallery_info.wbox>div>span {
     margin: -50px -5px 0;
     top: unset;
     border: 0;
-    font-weight: 600;
+    min-width: 1010px;
 }
 
 .formBuilderFormBreadCrumb.ui-helper-clearfix>ul>li>a {
