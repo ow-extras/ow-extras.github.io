@@ -139,6 +139,7 @@ div.judgingGallery_info.wbox>div>span {
     border: 0;
     width: 1010px;
     text-align: center;
+    padding: 0 5px;
 }
 
 .formBuilderFormBreadCrumb.ui-helper-clearfix>ul>li>a {
