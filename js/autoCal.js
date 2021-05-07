@@ -28,28 +28,24 @@ FrontendApiManager.onReady("submissionForm", function(api) {
         let $sumDisplay = $(`.set-${set}-total input[type='text']`);
         $sumDisplay.val($sumFields.sum()).keyup();
     };
-
     const keyUpSubtract = (event) => {
         let set = event.currentTarget.dataset.set;
         let $subtrahends = $(`.set-${set}`).find('input[type=text]');
         let $sumDisplay = $(`.set-${set}-total input[type='text']`);
         $sumDisplay.val($subtrahends.subtract()).keyup();
     };
-
     const keyUpMultiply = (event) => {
         let set = event.currentTarget.dataset.set;
         let $factors = $(`.set-${set} input[type='text']`);
         let $productDisplay = $(`.set-${set}-total input[type='text']`);
         $productDisplay.val($factors.multiply()).keyup();
     };
-
     const keyUpDivide = (event) => {
         let set = event.currentTarget.dataset.set;
         let $factors = $(`.set-${set} input[type='text']`);
         let $productDisplay = $(`.set-${set}-total input[type='text']`);
         $productDisplay.val($factors.divide()).keyup();
     };
-
     for (let i = 1; i <= MAX_SETS; i++) {
         fieldsObject[i] = $sumFields.filter('.set-' + i).find('input[type=text]').attr('data-set', i).keyup(keyUpSum);
         fieldsObject[i] = $subtractFields.filter('.set-' + i).find('input[type=text]').attr('data-set', i).keyup(keyUpSubtract);
