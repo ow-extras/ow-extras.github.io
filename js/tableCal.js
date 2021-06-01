@@ -1,4 +1,5 @@
-// to use: give table a class of sum-table and in the Field Template wrap the item to count in a span with sum-item as a class
+// to use: give table a class of sum-table and in the Field Template wrap the item to count in a span with sum-item as a class. 
+// support for other operators coming soon
 $.fn.extend({
     createObserver: function(callback, config) {
         config = config || {
