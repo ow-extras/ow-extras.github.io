@@ -160,7 +160,7 @@ FrontendApiManager.onReady("submissionForm", function(api) {
         $group1Total.val(sum);
         var sum = 0;
         $group2Total.val(sum);
-        sum = Number($cat1aTotal.val()) + Number($cat2aTotal.val()) + Number($cat3aTotal.val()) + Number($cat4aTotal.val()) + Number($cat5aTotal.val());
+        sum = Number($cat1aTotal.val()) + Number($cat2aTotal.val()) + Number($cat3aTotal.val()) + Number($cat4aTotal.val()) + Number($cat5aTotal.val()) + Number($cat6Total.val()) + Number($cat7Total.val());
         $group2Total.val(sum);
     };
 
