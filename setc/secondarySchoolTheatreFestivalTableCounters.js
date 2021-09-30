@@ -6,9 +6,7 @@ FrontendApiManager.onReady("submissionForm", function(api) {
         var adultCount = (teacherCount = studentCount = 0);
 
         $(".teacher").each(function() {
-            if (this.innerText == "Name:") {
-                teacherCount++;
-            }
+            teacherCount++;
             numTeacher.setValue(teacherCount);
         });
 
@@ -17,9 +15,7 @@ FrontendApiManager.onReady("submissionForm", function(api) {
         }
 
         $(".chaperone").each(function() {
-            if (this.innerText == "Name:") {
-                adultCount++;
-            }
+            adultCount++;
             numCha.setValue(adultCount);
         });
 
@@ -28,9 +24,7 @@ FrontendApiManager.onReady("submissionForm", function(api) {
         }
 
         $(".student").each(function() {
-            if (this.innerText == "Name:") {
-                studentCount++;
-            }
+            studentCount++;
             numStu.setValue(studentCount);
         });
 
