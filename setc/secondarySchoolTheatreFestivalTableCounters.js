@@ -4,35 +4,31 @@ FrontendApiManager.onReady("submissionForm", function(api) {
         var numStu = api.getField("totalStudentParticipants");
         var numCha = api.getField("totalChaperones");
         var adultCount = (teacherCount = studentCount = 0);
-
-        $(".teacher").each(function() {
-            teacherCount++;
-            numTeacher.setValue(teacherCount);
-        });
-
         if ($('.teacher').length == 0) {
             numTeacher.setValue(0);
+        } else {
+            $(".teacher").each(function() {
+                teacherCount++;
+                numTeacher.setValue(teacherCount);
+            });
         }
-
-        $(".chaperone").each(function() {
-            adultCount++;
-            numCha.setValue(adultCount);
-        });
-
         if ($('.chaperone').length == 0) {
             numCha.setValue(0);
+        } else {
+            $(".chaperone").each(function() {
+                adultCount++;
+                numCha.setValue(adultCount);
+            });
         }
-
-        $(".student").each(function() {
-            studentCount++;
-            numStu.setValue(studentCount);
-        });
-
         if ($('.student').length == 0) {
             numStu.setValue(0);
+        } else {
+            $(".student").each(function() {
+                studentCount++;
+                numStu.setValue(studentCount);
+            });
         }
     }
-
     window.setInterval(function() {
         updateTotals();
     }, 1000);
