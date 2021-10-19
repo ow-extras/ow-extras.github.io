@@ -2,10 +2,10 @@ FrontendApiManager.onReady("submissionForm", function(api) {
     'use strict';
     let fieldsObject = {};
     const MAX_SETS = $(":input").length;
-    let $sumFields = $('.sum-field');
-    let $subtractFields = $('.subtract-field');
-    let $multiplyFields = $('.multiply-field');
-    let $divideFields = $('.divide-field');
+    let $sumFields = $('.add-field');
+    let $subtractFields = $('.minus-field');
+    let $multiplyFields = $('.times-field');
+    let $divideFields = $('.divided-field');
     $.fn.extend({
         sum: function() {
             return this.map((i, v) => Number(v.value)).toArray().reduce((t, i) => t + i);
