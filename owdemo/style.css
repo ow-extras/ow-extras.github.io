@@ -44,7 +44,7 @@ a.button.btn:hover {
     font-weight: bold!important;
 }
 
-li.pg-next>a {
+li.pg-next>a, li.pg-prev>a {
     border-radius: 2px!important;
     display: block!important;
     font-size: 12px!important;
@@ -64,6 +64,6 @@ li.pg-next>a {
     line-height: inherit!important;
 }
 
-li.pg-next>a:hover {
+li.pg-next>a:hover, li.pg-prev>a:hover {
     background-color: #5c9cd4!important;
 }
