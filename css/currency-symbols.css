@@ -35,3 +35,11 @@
     bottom: 8px;
     font-size: 15px;
 }
+
+.percent-sign .view::after {
+    content: "%";
+    position: absolute;
+    left: 5px;
+    bottom: 8px;
+    font-size: 15px;
+}
