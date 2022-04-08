@@ -36,10 +36,10 @@
     font-size: 15px;
 }
 
-.percent-sign .view::after {
+.percent-sign .view::before {
     content: "%";
     position: absolute;
-    left: 5px;
+    right: 5px;
     bottom: 8px;
     font-size: 15px;
 }
