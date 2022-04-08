@@ -44,7 +44,8 @@
 .percent-sign .view::before {
     content: "%";
     position: absolute;
-    right: 5px;
+    left: 60px;
     bottom: 8px;
     font-size: 15px;
+    font-weight: 900;
 }
