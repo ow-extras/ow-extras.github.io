@@ -6,6 +6,8 @@ FrontendApiManager.onReady("submissionForm", function(api) {
     let $subtractField = $('.subtractfield');
     let $multiplyField = $('.multiplyfield');
     let $divideField = $('.dividefield');
+    let e = $.Event('keyup');
+    e.keyCode= 13;    
     $.fn.extend({
         sum: function() {
             return this.map((i, v) => Number(v.value)).toArray().reduce((t, i) => t + i);
@@ -52,4 +54,6 @@ FrontendApiManager.onReady("submissionForm", function(api) {
         fieldsObject[i] = $multiplyField.filter('.group-' + i).find('input[type=text]').attr('data-set', i).keyup(keyUpMultiply);
         fieldsObject[i] = $divideField.filter('.group-' + i).find('input[type=text]').attr('data-set', i).keyup(keyUpDivide);
     };
+    function updateTotals () { $('div input').trigger(e); }
+    setInterval(updateTotals, 1000); 
 });
