@@ -1,0 +1,57 @@
+.read-only,
+.read-only-radio,
+.read-only-checkbox {
+    pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.read-only input,
+.read-only select,
+.read-only div textarea {
+    background: #e6e6e6;
+}
+
+.read-only select::-ms-expand {
+    display: none;
+}
+
+.hide-field,
+.read-only-radio>div>div>label>input,
+.read-only-checkbox>div>div>label>input,
+.read-only-radio .resetRadioListSelectedValues {
+    display: none!important;
+}
+
+.read-only-checkbox>div>div>label>input+*::before {
+    margin: 2px 5px 5px 0px;
+    content: "";
+    display: inline-block;
+    vertical-align: bottom;
+    width: .75rem;
+    height: .75rem;
+    border-radius: 10%;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: #2e2e2e;
+    background: #e6e6e6;
+}
+
+.read-only-radio>div>div>label>input+*::before {
+    margin: 2px 5px 5px 0px;
+    content: "";
+    display: inline-block;
+    vertical-align: bottom;
+    width: .75rem;
+    height: .75rem;
+    border-radius: 40%;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: #2e2e2e;
+    background: #e6e6e6;
+}
+
+.read-only-checkbox>div>div>label>input:checked+*::before,
+.read-only-radio>div>div>label>input:checked+*::before {
+    background: #2e2e2e;
+}
