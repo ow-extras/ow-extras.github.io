@@ -54,15 +54,6 @@ FrontendApiManager.onReady("submissionForm", function(api) {
             total = total.toFixed(2)
             $productDisplay.val(total).keyup();
         }
-        // let rounded = Number(total).toFixed(2);
-        // console.log(Number(rounded))
-        // console.log(total)
-        // if (!isNaN(rounded)) {
-        //     console.log(rounded)
-        // } else {
-        //     console.log("total is NaN")
-        //     $productDisplay.val(0);
-        // }
     };
     for (let i = 1; i <= MAX_SETS; i++) {
         fieldsObject[i] = $sumField.filter('.group-' + i).find('input[type=text]').attr('data-set', i).keyup(keyUpSum);
