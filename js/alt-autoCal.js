@@ -7,7 +7,7 @@ FrontendApiManager.onReady("submissionForm", function(api) {
     let $multiplyField = $('.multiplyfield');
     let $divideField = $('.dividefield');
     let e = $.Event('keyup');
-    e.keyCode= 13;    
+    e.keyCode = 13;
     $.fn.extend({
         sum: function() {
             return this.map((i, v) => Number(v.value)).toArray().reduce((t, i) => t + i);
@@ -46,7 +46,23 @@ FrontendApiManager.onReady("submissionForm", function(api) {
         let set = event.currentTarget.dataset.set;
         let $factors = $(`.group-${set} input[type='text']`);
         let $productDisplay = $(`.group-${set}-total input[type='text']`);
-        $productDisplay.val($factors.divide()).keyup();
+        // $productDisplay.val($factors.divide()).keyup();
+        let total = $factors.divide();
+        if (isNaN(total)) {
+            $productDisplay.val(0)
+        } else {
+            total = total.toFixed(2)
+            $productDisplay.val(total).keyup();
+        }
+        // let rounded = Number(total).toFixed(2);
+        // console.log(Number(rounded))
+        // console.log(total)
+        // if (!isNaN(rounded)) {
+        //     console.log(rounded)
+        // } else {
+        //     console.log("total is NaN")
+        //     $productDisplay.val(0);
+        // }
     };
     for (let i = 1; i <= MAX_SETS; i++) {
         fieldsObject[i] = $sumField.filter('.group-' + i).find('input[type=text]').attr('data-set', i).keyup(keyUpSum);
@@ -54,6 +70,7 @@ FrontendApiManager.onReady("submissionForm", function(api) {
         fieldsObject[i] = $multiplyField.filter('.group-' + i).find('input[type=text]').attr('data-set', i).keyup(keyUpMultiply);
         fieldsObject[i] = $divideField.filter('.group-' + i).find('input[type=text]').attr('data-set', i).keyup(keyUpDivide);
     };
-    function updateTotals () { $('div input').trigger(e); }
-    setInterval(updateTotals, 1000); 
+
+    function updateTotals() { $('div input').trigger(e); }
+    setInterval(updateTotals, 1000);
 });
