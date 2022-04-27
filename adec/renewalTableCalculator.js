@@ -48,8 +48,8 @@ if (window.location.href.indexOf("submissions/details") > -1) {
         var $cat4aTable = $(".cat-4a-table tbody");
         var $cat5Total = $(".cat-5-total input[type=text]");
         var $cat5Table = $(".cat-5-table tbody");
-        var $cat5aTotal = $(".cat-5a-total input[type=text]");
-        var $cat5aTable = $(".cat-5a-table tbody");
+        //var $cat5aTotal = $(".cat-5a-total input[type=text]");
+        //var $cat5aTable = $(".cat-5a-table tbody");
         var $cat6Total = $(".cat-6-total input[type=text]");
         var $cat6Table = $(".cat-6-table tbody");
         var $cat7Total = $(".cat-7-total input[type=text]");
@@ -170,7 +170,7 @@ if (window.location.href.indexOf("submissions/details") > -1) {
         calulateCat4();
         calulateCat4a();
         calulateCat5();
-        calulateCat5a();
+        //calulateCat5a();
         calulateCat6();
         calulateCat7();
         $cat1Table.createObserver(calulateCat1);
@@ -182,7 +182,7 @@ if (window.location.href.indexOf("submissions/details") > -1) {
         $cat4Table.createObserver(calulateCat4);
         $cat4aTable.createObserver(calulateCat4a);
         $cat5Table.createObserver(calulateCat5);
-        $cat5aTable.createObserver(calulateCat5a);
+        //$cat5aTable.createObserver(calulateCat5a);
         $cat6Table.createObserver(calulateCat6);
         $cat7Table.createObserver(calulateCat7);
     });
