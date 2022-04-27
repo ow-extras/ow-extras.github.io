@@ -128,14 +128,14 @@ if (window.location.href.indexOf("submissions/details") > -1) {
             $cat5Total.val(total).change();
             calculateGroupTotals();
         };
-        var calulateCat5a = function() {
+        /*var calulateCat5a = function() {
             var total = 0;
             $(".cat-5a-hours").each(function() {
                 total += Number(this.innerText);
             });
             $cat5aTotal.val(total).change();
             calculateGroupTotals();
-        };
+        };*/
         var calulateCat6 = function() {
             var total = 0;
             $(".cat-6-hours").each(function() {
@@ -157,7 +157,7 @@ if (window.location.href.indexOf("submissions/details") > -1) {
             sum = Number($cat1Total.val()) + Number($cat2Total.val()) + Number($cat3Total.val()) + Number($cat4Total.val()) + Number($cat5Total.val()) + Number($cat6Total.val()) + Number($cat7Total.val());
             $group1Total.val(sum);
             var sum = 0;
-            sum = Number($cat1aTotal.val()) + Number($cat2aTotal.val()) + Number($cat3aTotal.val()) + Number($cat4aTotal.val()) + Number($cat6Total.val()) + Number($cat7Total.val());
+            sum = Number($cat1aTotal.val()) + Number($cat2aTotal.val()) + Number($cat3aTotal.val()) + Number($cat4aTotal.val());
             $group2Total.val(sum);
         };
 
