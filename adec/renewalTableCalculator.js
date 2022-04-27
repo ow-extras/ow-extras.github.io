@@ -157,7 +157,7 @@ if (window.location.href.indexOf("submissions/details") > -1) {
             sum = Number($cat1Total.val()) + Number($cat2Total.val()) + Number($cat3Total.val()) + Number($cat4Total.val());
             $group1Total.val(sum);
             var sum = 0;
-            sum = Number($cat1aTotal.val()) + Number($cat2aTotal.val()) + Number($cat3aTotal.val()) + Number($cat4aTotal.val() + Number($cat5aTotal.val() + Number($cat6Total.val()) + Number($cat7Total.val());
+            sum = Number($cat1aTotal.val()) + Number($cat2aTotal.val()) + Number($cat3aTotal.val()) + Number($cat4aTotal.val()) + Number($cat5aTotal.val()) + Number($cat6Total.val()) + Number($cat7Total.val());
             $group2Total.val(sum);
         };
 
